@@ -1,0 +1,28 @@
+<?php
+    require_once '/var/www/html/MVC//model/ProductModel.php';
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../style/allProducts.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <ul>
+            <form method="get">
+                <?php foreach ($product as $productArray): ?>
+
+                    <li>
+                        <img src="<?php echo $productArray[1];?>">
+                        <h2 class="btc"><?php echo  $productArray[2]?></h2>
+                        <h3 class="dol"><?php echo $productArray[3];?> $</h3>
+                        <a href="oneProduct.phtml">
+                            <input class="nuoroda" type="submit" name="arrayID" value="<?php echo $productArray[0]?>">
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </form>
+        </ul>
+    </body>
+</html>

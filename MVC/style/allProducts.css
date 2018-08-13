@@ -1,0 +1,45 @@
+ul{
+    list-style: none;
+    color: white;
+}
+li{
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: #dedede 1px solid;
+    margin: 10px;
+    background-color: #009688;
+    text-align: center;
+    border-radius: 20px;
+}
+img{
+    margin: 20px;
+    border-radius: 20px;
+}
+.dol{
+    border: 1px #dedede solid;
+    background-color: aquamarine;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.btc{
+    border: 1px solid #dedede;
+    margin: 0 auto;
+    background-color: springgreen;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.nuoroda{
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #3592b6;
+    margin-top: 10px;
+    border-radius: 10px;
+}
