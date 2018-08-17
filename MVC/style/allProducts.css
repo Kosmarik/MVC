@@ -1,24 +1,30 @@
 ul{
     list-style: none;
-    color: white;
+    /*color: white;*/
 }
 li{
     width: 400px;
-    height: 500px;
+    height: max-content;
     float: left;
     border: #dedede 1px solid;
     margin: 10px;
-    background-color: #009688;
+    background-color: #F0FFF0;
     text-align: center;
     border-radius: 20px;
 }
-img{
+.product-img{
+    width: 300px;
+    height: 300px;
     margin: 20px;
     border-radius: 20px;
 }
+.product-img:hover{
+    opacity: 0.7;
+}
+
 .dol{
     border: 1px #dedede solid;
-    background-color: aquamarine;
+    background-color: springgreen;
     width: 100px;
     border-radius: 10px;
     color: white;
@@ -34,12 +40,22 @@ img{
     border-radius: 10px;
     margin-top: 10px;
     padding: 10px;
-}
-.nuoroda{
-    width: 100px;
-    padding: 10px;
     color: white;
-    background-color: #3592b6;
-    margin-top: 10px;
+}
+a{
+    border: #dedede 1px solid;
+    padding: 10px;
     border-radius: 10px;
+    background-color: springgreen;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: #009688;
+}
+footer{
+    height: 70px;
+    background-color: springgreen;
+    color: white;
 }

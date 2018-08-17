@@ -1,8 +1,4 @@
-<?php
-    require_once '/var/www/html/MVC//model/ProductModel.php';
-
-?>
-
+<?php $products = $this->products; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,19 +6,17 @@
     </head>
     <body>
         <ul>
-            <form method="get">
-                <?php foreach ($product as $productArray): ?>
-
+                <?php foreach ($products as $productArray): ?>
                     <li>
-                        <img src="<?php echo $productArray[1];?>">
+                        <div class="product-image"><img class="product-img" src="<?php echo $productArray[1];?>"></div>
                         <h2 class="btc"><?php echo  $productArray[2]?></h2>
                         <h3 class="dol"><?php echo $productArray[3];?> $</h3>
-                        <a href="oneProduct.phtml">
-                            <input class="nuoroda" type="submit" name="arrayID" value="<?php echo $productArray[0]?>">
-                        </a>
+                        <h4><a href="products/product/<?php echo  $productArray[0]; ?>">View Product</a></h4>
                     </li>
                 <?php endforeach; ?>
-            </form>
         </ul>
     </body>
 </html>
+
+
+
