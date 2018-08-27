@@ -1,20 +1,16 @@
 <?php
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-
+//Getting path
 $path = str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['REQUEST_URI']);
 
+// Explode our path in array and deliting '/'
 $path = explode('/', ltrim($path,'/'));
 
-
-
+// The first letter is done by the capital letter
 $controller = ucfirst($path[0]);
-if(isset($path[1]) && isset($path[2])) {
-    $id = $path[2];
-    $method = $path[1];
-}
 
 if(file_exists('controller/'.$controller.'.php')){
     require 'controller/'.$controller.'.php';

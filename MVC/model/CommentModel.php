@@ -19,4 +19,14 @@ class CommentModel extends dbConnect
             die($this->conn->error);
         }
     }
+
+    public function getAllProductComents($product_id){
+        $sql = "SELECT `username`, `comment` FROM comments WHERE product_id = $product_id";
+        $result = $this->conn->query($sql);
+        $products = mysqli_fetch_all($result);
+        return $products;
+    }
 }
+
+
+
